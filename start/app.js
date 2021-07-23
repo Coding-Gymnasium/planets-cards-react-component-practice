@@ -95,11 +95,7 @@ const Container = (props) => {
       {props.cards.map( card =>
         <Planet
           key={card.id.toString()}
-          name={card.name}
-          diameter={card.diameter}
-          moons={card.moon}
-          desc={card.desc}
-          url={card.url}
+          {...card}
         />
       )}
     </div>
